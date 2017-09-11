@@ -15,6 +15,12 @@
 		"oAP": "\/.gitignore",
 		"oF": 0
 		},
+	"\/.static": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/.static",
+		"oF": 0
+		},
 	"\/bower.json": {
 		"ft": 524288,
 		"oA": 1,
@@ -2620,12 +2626,6 @@
 		"oAP": "\/css\/style-min.css",
 		"oF": 0,
 		"oS": 0
-		},
-	"\/Dockerfile": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/Dockerfile",
-		"oF": 0
 		},
 	"\/img\/AA.png": {
 		"ft": 32768,
