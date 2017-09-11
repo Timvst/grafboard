@@ -15,12 +15,6 @@
 		"oAP": "\/.gitignore",
 		"oF": 0
 		},
-	"\/.static": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/.static",
-		"oF": 0
-		},
 	"\/bower.json": {
 		"ft": 524288,
 		"oA": 1,
@@ -2626,6 +2620,12 @@
 		"oAP": "\/css\/style-min.css",
 		"oF": 0,
 		"oS": 0
+		},
+	"\/Dockerfile": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/Dockerfile",
+		"oF": 0
 		},
 	"\/img\/AA.png": {
 		"ft": 32768,
@@ -10174,12 +10174,6 @@
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
-		},
-	"\/Procfile": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/Procfile",
-		"oF": 0
 		},
 	"\/README.md": {
 		"cS": 0,
@@ -21696,14 +21690,6 @@
 		"oA": 2,
 		"oAP": "\/source\/ZZ.psd",
 		"oF": 0
-		},
-	"\/static.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/static-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
 		}
 	},
 "hooks": [
