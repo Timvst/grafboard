@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Grafboard</title>
+
+  <!-- CSS  -->
+  <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="bower_components/materialize/dist/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style-min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <style>
+    .container {
+      margin: 0 auto;
+      max-width: 1920px;
+      width: 85%;
+    }
+    #background-img {
+      position: absolute;
+      z-index: -2;
+      filter: brightness(0.5);
+
+    }
+
+
+  </style>
+
+
+
+</head>
+<body class="blue-grey">
+<!--<div id="background-img"><img id="unsplash" class="responsive-img"></div>-->
+  <div id="grafboard" class="container">
+    <div>
+      <div class="row">
+        <div class="col l5">
+          <div class="section">
+              <h1 class="white-text">
+                Vandaag
+              </h1>
+            <div id="dagrooster"></div>
+
+
+          </div>
+        </div>
+        <div class="col l1"></div>
+        <div class="col l6 white-text">
+          <div class="section">
+              <h1>Deze week
+              </h1>
+                <div id="weekrooster"></div>
+          </div>
+          <div class="section">
+            <div class="col s5">
+              <div class="card-panel deep-orange darken-4 lighten-5 z-depth-1">
+                <div class="valign-wrapper">
+                  <div class="col s12">
+                    <h5 class="white-text truncate">
+                      Rood = niet storen
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!--
+          <div class="row valign-wrapper left-align">
+                <h4 class="col s3">Maandag</h4>
+                <div class="col s9">
+                  <div class="col s3 center-align">
+                    <img src="img/koppen/ben.jpg" alt="" class="circle responsive-img">op3
+                  </div>
+
+                  <div class="col s3 center-align">
+                    <img src="img/koppen/ben.jpg" alt="" class="circle responsive-img">NOS.nl
+                  </div>
+
+                  <div class="col s3 center-align">
+                    <img src="img/koppen/ben.jpg" alt="" class="circle responsive-img">Stagiair
+                  </div>
+
+                  <div class="col s3 center-align">
+                    <img src="img/koppen/ben.jpg" alt="" class="circle responsive-img">Xtra
+                  </div>
+                </div>
+          </div>
+
+
+          <div class="row valign-wrapper left-align">
+                <h4 class="col s2">Dinsdag</h4>
+                <div class="col s1">
+                </div>
+                <div class="col s9">
+                  <div class="col s3 center-align">
+                    <img src="img/koppen/ben.jpg" alt="" class="circle responsive-img">op3
+                  </div>
+
+                  <div class="col s3 center-align">
+                    <img src="img/koppen/ben.jpg" alt="" class="circle responsive-img">NOS.nl
+                  </div>
+
+                  <div class="col s3 center-align">
+                    <img src="img/koppen/ben.jpg" alt="" class="circle responsive-img">Stagiair
+                  </div>
+
+                  <div class="col s3 center-align">
+                    <img src="img/koppen/ben.jpg" alt="" class="circle responsive-img">Xtra
+                  </div>
+                </div>
+          </div>
+
+          <div class="row valign-wrapper left-align">
+                <h4 class="col s2">Woensdag</h4>
+                <div class="col s1">
+                </div>
+                <div class="col s9">
+                  <div class="col s3 center-align">
+                    <img src="img/koppen/ben.jpg" alt="" class="circle responsive-img">op3
+                  </div>
+
+                  <div class="col s3 center-align">
+                    <img src="img/koppen/ben.jpg" alt="" class="circle responsive-img">NOS.nl
+                  </div>
+
+                  <div class="col s3 center-align">
+                    <img src="img/koppen/ben.jpg" alt="" class="circle responsive-img">Stagiair
+                  </div>
+
+                  <div class="col s3 center-align">
+                    <img src="img/koppen/ben.jpg" alt="" class="circle responsive-img">Xtra
+                  </div>
+                </div>
+          </div>
+
+          <div class="row valign-wrapper left-align">
+                <h4 class="col s2">Donderdag</h4>
+                <div class="col s1">
+                </div>
+                <div class="col s9">
+                  <div class="col s3 center-align">
+                    <img src="img/koppen/ben.jpg" alt="" class="circle responsive-img">op3
+                  </div>
+
+                  <div class="col s3 center-align">
+                    <img src="img/koppen/ben.jpg" alt="" class="circle responsive-img">NOS.nl
+                  </div>
+
+                  <div class="col s3 center-align">
+                    <img src="img/koppen/ben.jpg" alt="" class="circle responsive-img">Stagiair
+                  </div>
+
+                  <div class="col s3 center-align">
+                    <img src="img/koppen/ben.jpg" alt="" class="circle responsive-img">Xtra
+                  </div>
+                </div>
+          </div>
+
+          <div class="row valign-wrapper left-align">
+                <h4 class="col s3">Vrijdag</h4>
+
+
+                <div class="col s9">
+                  <div class="col s3 center-align">
+                    <img src="img/koppen/ben.jpg" alt="" class="circle responsive-img">op3
+                  </div>
+
+                  <div class="col s3 center-align">
+                    <img src="img/koppen/ben.jpg" alt="" class="circle responsive-img">NOS.nl
+                  </div>
+
+                  <div class="col s3 center-align">
+                    <img src="img/koppen/ben.jpg" alt="" class="circle responsive-img">Stagiair
+                  </div>
+
+                  <div class="col s3 center-align">
+                    <img src="img/koppen/ben.jpg" alt="" class="circle responsive-img">Xtra
+                  </div>
+
+                </div>
+          </div>
+        -->
+
+
+
+          </div>
+
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <!--  Scripts-->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="bower_components/background-blur/dist/background-blur.js"></script>
+  <script src="bower_components/materialize/dist/js/materialize.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js"></script>
+  <script src='//cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
+
+  <!-- handlebars Dagrooster -->
+  <script id="dagrooster-template" type="text/x-handlebars-template">
+    <div class="card-panel {{#if Druk }}deep-orange darken-4{{else}}grey{{/if}} lighten-5 z-depth-1">
+      <div class="valign-wrapper">
+        <div class="col s2">
+          <img src="img/{{Naam}}.jpg" alt="" class="circle responsive-img">
+        </div>
+        <div class="col s10">
+          <h3 class="{{#if Druk}}white-text{{else}}black-text{{/if}} truncate">
+            {{Taak}}
+          </h4>
+        </div>
+      </div>
+    </div>
+  </script>
+
+  <!-- handlebars Weekrooster -->
+  <script id="weekrooster-template" type="text/x-handlebars-template">
+    <div class="row valign-wrapper left-align">
+          <h4 class="col s2">{{Dag}}</h4>
+          <div class="col s1"></div>
+          <div class="col s9">
+
+            {{#if GRAF1}}
+            <div class="col s2 center-align">
+              <img src="/img/{{GRAF1}}.jpg" alt="" class="circle responsive-img">1 (NOS op 3)
+            </div>
+            {{/if}}
+
+            {{#if GRAF2}}
+            <div class="col s2 center-align">
+              <img src="/img/{{GRAF2}}.jpg" alt="" class="circle responsive-img">2 (NOS.nl)
+            </div>
+            {{/if}}
+
+            {{#if GRAF3}}
+            <div class="col s2 center-align">
+              <img src="/img/{{GRAF3}}.jpg" alt="" class="circle responsive-img">3
+            </div>
+            {{/if}}
+
+            {{#if GRAF4}}
+            <div class="col s2 center-align">
+              <img src="/img/{{GRAF4}}.jpg" alt="" class="circle responsive-img">4
+            </div>
+            {{/if}}
+
+            {{#if DATA}}
+            <div class="col s2 center-align">
+              <img src="/img/{{DATA}}.jpg" alt="" class="circle responsive-img">Data
+            </div>
+            {{/if}}
+
+            {{#if EXTRA}}
+            <div class="col s2 center-align">
+              <img src="/img/{{EXTRA}}.jpg" alt="" class="circle responsive-img">Extra
+            </div>
+            {{/if}}
+          </div>
+    </div>
+  </script>
+
+  <!-- laden spreadsheets -->
+  <script type='text/javascript'>
+    var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/10nNtNnHYo-B_c0nAlfZXRddTVbkBN1H-4FYsDfoK-LE/pubhtml';
+
+    function renderRooster () {
+      Tabletop.init( { key: publicSpreadsheetUrl,
+        callback: showInfo,
+        parseNumbers: true } );
+    }
+
+    function updateRooster () {
+      $('#grafboard').fadeOut(1000, function() {
+        $("#weekrooster").empty();
+        $("#dagrooster").empty();
+        renderRooster();
+      });
+      $('#grafboard').delay(1500).fadeIn(1000);
+    }
+
+    function showInfo(data, tabletop) {
+      var sourceDag   = $("#dagrooster-template").html();
+      var template = Handlebars.compile(sourceDag);
+      $.each( tabletop.sheets("Dagrooster").all(), function(i, dag) {
+        var html = template(dag);
+        $("#dagrooster").append(html);
+      });
+      var sourceWeek   = $("#weekrooster-template").html();
+      var template = Handlebars.compile(sourceWeek);
+      $.each( tabletop.sheets("Weekrooster").all(), function(i, week) {
+        var html = template(week);
+        $("#weekrooster").append(html);
+      });
+      console.log('Hop!');
+    };
+
+    window.onload = renderRooster;
+    setInterval(updateRooster, 600*1000);
+
+    </script>
+
+
+
+
+
+  </body>
+</html>
